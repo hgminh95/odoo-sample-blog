@@ -1,5 +1,6 @@
 <openerp>
     <data>
+        <!-- Views -->
         <record model="ir.ui.view" id="blog.article_view_list">
             <field name="name">Article List View</field>
             <field name="model">blog.article</field>
@@ -19,6 +20,20 @@
             <field name="priority" eval="10"></field>
             <field name="arch" type="xml">
                 <form string="Article form">
+                    <header>
+                        <button name="draft" type="workflow"
+                                string="Reset to draft"
+                                states="review"/>
+                        <button name="review" type="workflow"
+                                string="Review" states="draft"
+                                class="oe_highlight"/>
+                        <button name="done" type="workflow"
+                                string="Mark as done" states="review"
+                                class="oe_highlight"/>
+
+                        <field name="state" widget="statusbar"/>
+                    </header>
+
                     <group colspan="4">
                         <group colspan="2" col="2">
                             <separator string="General stuff" colspan="2"/>
@@ -33,19 +48,18 @@
             </field>
         </record>
 
+        <!-- Actions -->
         <record model="ir.actions.act_window" id="blog.article_action_window">
             <field name="name">Article Action Window</field>
             <field name="res_model">blog.article</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <!-- Top menu item -->
+        <!-- Menu items -->
         <menuitem name="Blog" id="blog.menu_root"/>
 
-        <!-- Menu categories -->
         <menuitem name="Article" id="blog.menu_article" parent="blog.menu_root"/>
 
-        <!-- Actions -->
         <menuitem name="Article" id="blog.menu_article_list" parent="blog.menu_article"
                   action="blog.article_action_window"/>
     </data>
