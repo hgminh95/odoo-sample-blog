@@ -13,6 +13,26 @@
             </field>
         </record>
 
+        <record model="ir.ui.view" id="blog.article_view_form">
+            <field name="name">Article Form View</field>
+            <field name="model">blog.article</field>
+            <field name="priority" eval="10"></field>
+            <field name="arch" type="xml">
+                <form string="Article form">
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="General stuff" colspan="2"/>
+                            <field name="title"/>
+                            <field name="create_uid" readonly="1"/>
+                        </group>
+
+                        <separator string="Content" colspan="4"/>
+                        <field name="content" nolabel="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
         <record model="ir.actions.act_window" id="blog.article_action_window">
             <field name="name">Article Action Window</field>
             <field name="res_model">blog.article</field>
