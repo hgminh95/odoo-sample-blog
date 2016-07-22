@@ -3,14 +3,39 @@
         <template id="article_index">
             <title>Blog</title>
 
-            <t t-foreach="articles" t-as="article">
-                <h1>
-                    <t t-esc="article.title"/>
-                </h1>
-                <p>
-                    <t t-esc="article.content"/>
-                </p>
-            </t>
+            <div class="page-header">
+                <h1>Blog</h1>
+            </div>
+
+            <div class="container">
+                <t t-foreach="articles" t-as="article">
+                    <h1>
+                        <a t-attf-href="/blog/articles/{{ article.id }}">
+                            <t t-esc="article.title"/>
+                        </a>
+                    </h1>
+                    <p>
+                        <t t-esc="article.content"/>
+                    </p>
+                </t>
+            </div>
+        </template>
+
+        <template id="article_show">
+            <p>
+                <a href="/blog/articles">
+                    Back to homepage
+                </a>
+            </p>
+
+            <title><t t-esc="article.title"></t></title>
+
+            <h1>
+                <t t-esc="article.title"/>
+            </h1>
+            <p>
+                <t t-esc="article.content"/>
+            </p>
         </template>
     </data>
 </openerp>

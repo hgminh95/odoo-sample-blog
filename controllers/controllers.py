@@ -11,17 +11,11 @@ class Blog(http.Controller):
             'articles': Articles.search([('state', '=', 'done')])
         })
 
-# class Blog(http.Controller):
-#     @http.route('/blog/blog/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
-
-#     @http.route('/blog/blog/objects/', auth='public')
-#     def list(self, **kw):
-#         return http.request.render('blog.listing', {
-#             'root': '/blog/blog',
-#             'objects': http.request.env['blog.blog'].search([]),
-#         })
+    @http.route('/blog/articles/<model("blog.article"):article>/', auth='public')
+    def object(self, article, **kw):
+        return http.request.render('blog.article_show', {
+            'article': article
+        })
 
 #     @http.route('/blog/blog/objects/<model("blog.blog"):obj>/', auth='public')
 #     def object(self, obj, **kw):
