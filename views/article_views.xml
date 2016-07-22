@@ -10,6 +10,7 @@
                     <field name="title"/>
                     <field name="content"/>
                     <field name="create_uid"/>
+                    <field name="state"/>
                 </tree>
             </field>
         </record>
@@ -48,11 +49,29 @@
             </field>
         </record>
 
+        <record model="ir.ui.view" id="blog.article_view_search">
+            <field name="name">Article Search View</field>
+            <field name="model">blog.article</field>
+            <field name="priortity" eval="10"/>
+            <field name="arch" type="xml">
+                <search string="Articles">
+                    <filter name="my_articles" string="My Articles"
+                            domain="[('create_uid', '=', 'uid')]"/>
+                    <filter name="drafts" string="Draft Articles"
+                            domain="[('state', '=', 'draft')]"/>
+                    <filter name="review" string="Articles In Review"
+                            domain="[('state', '=', 'review')]"/>
+                    <filter name="done" string="Published Articles"
+                            domain="[('state', '=', 'done')]"/>
+                </search>
+            </field>
+        </record>
+
         <!-- Actions -->
         <record model="ir.actions.act_window" id="blog.article_action_window">
             <field name="name">Article Action Window</field>
             <field name="res_model">blog.article</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,search</field>
         </record>
 
         <!-- Menu items -->
