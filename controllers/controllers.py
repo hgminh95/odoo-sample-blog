@@ -1,6 +1,16 @@
 # -*- coding: utf-8 -*-
 from openerp import http
 
+
+class Blog(http.Controller):
+
+    @http.route('/blog/articles', auth='public')
+    def index(self, **kw):
+        Articles = http.request.env['blog.article']
+        return http.request.render('blog.article_index', {
+            'articles': Articles.search([('state', '=', 'done')])
+        })
+
 # class Blog(http.Controller):
 #     @http.route('/blog/blog/', auth='public')
 #     def index(self, **kw):

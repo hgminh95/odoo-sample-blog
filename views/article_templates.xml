@@ -1,0 +1,16 @@
+<openerp>
+    <data>
+        <template id="article_index">
+            <title>Blog</title>
+
+            <t t-foreach="articles" t-as="article">
+                <h1>
+                    <t t-esc="article.title"/>
+                </h1>
+                <p>
+                    <t t-esc="article.content"/>
+                </p>
+            </t>
+        </template>
+    </data>
+</openerp>

@@ -26,7 +26,7 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/article_views.xml',
-        'views/templates.xml',
+        'views/article_templates.xml',
         'data/article_workflow.xml'
     ],
     # only loaded in demonstration mode
