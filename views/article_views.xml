@@ -1,27 +1,23 @@
 <openerp>
     <data>
+        <record model="ir.ui.view" id="blog.article_view_list">
+            <field name="name">Article List View</field>
+            <field name="model">blog.article</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree string="Article list">
+                    <field name="title"/>
+                    <field name="content"/>
+                    <field name="create_uid"/>
+                </tree>
+            </field>
+        </record>
 
         <record model="ir.actions.act_window" id="blog.article_action_window">
-            <field name="name">Blog Action Window</field>
+            <field name="name">Article Action Window</field>
             <field name="res_model">blog.article</field>
             <field name="view_mode">tree,form</field>
         </record>
-
-    <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="blog.action_server">
-      <field name="name">blog server</field>
-      <field name="model_id" ref="model_blog_blog"/>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
-    </record>
-    -->
-
 
         <!-- Top menu item -->
         <menuitem name="Blog" id="blog.menu_root"/>
