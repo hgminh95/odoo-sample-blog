@@ -2,24 +2,21 @@
     <data>
         <record id="article0" model="blog.article">
             <field name="title">What is Lorem Ipsum?</field>
-            <field name="content">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <field name="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </field>
             <field name='state'>done</field>
         </record>
 
         <record id="article1" model="blog.article">
             <field name="title">Why do we use it?</field>
-            <field name="content">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            <field name="content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </field>
             <field name='state'>done</field>
         </record>
 
         <record id="article2" model="blog.article">
             <field name="title">Where does it come from?</field>
-            <field name="content">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            <field name="content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
                 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
             </field>
@@ -28,16 +25,14 @@
 
         <record id="article3" model="blog.article">
             <field name="title">Where can I get some?</field>
-            <field name="content">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            <field name="content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
             </field>
             <field name='state'>done</field>
         </record>
 
         <record id="article4" model="blog.article">
             <field name="title">Cur haec eadem Democritus?</field>
-            <field name="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Numquam facies. Duo Reges: constructio interrete. Ea possunt paria non esse. Haeret in salebra.
+            <field name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Numquam facies. Duo Reges: constructio interrete. Ea possunt paria non esse. Haeret in salebra.
 
                 Explanetur igitur. Quid ad utilitatem tantae pecuniae? Est, ut dicis, inquit; Ne discipulum abducam, times. Sed haec in pueris;
 
@@ -50,8 +45,7 @@
 
         <record id="article5" model="blog.article">
             <field name="title">Quid sequatur, quid repugnet, vident.</field>
-            <field name="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Conferam avum tuum Drusum cum C. Sed quae tandem ista ratio est? Duo Reges: constructio interrete. Duarum enim vitarum nobis erunt instituta capienda. At certe gravius. Efficiens dici potest.
+            <field name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Conferam avum tuum Drusum cum C. Sed quae tandem ista ratio est? Duo Reges: constructio interrete. Duarum enim vitarum nobis erunt instituta capienda. At certe gravius. Efficiens dici potest.
 
                 Nihil enim hoc differt. Ratio quidem vestra sic cogit. Utilitatis causa amicitia est quaesita. Falli igitur possumus. Non est igitur summum malum dolor. Scaevolam M. Stoici scilicet. Confecta res esset. Tum Torquatus: Prorsus, inquit, assentior;
 
@@ -64,16 +58,14 @@
 
         <record id="article6" model="blog.article">
             <field name="title">Quis enim redargueret?</field>
-            <field name="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Omnes enim iucundum motum, quo sensus hilaretur. At certe gravius. Primum quid tu dicis breve? Hic ambiguo ludimur. Sed videbimus. Nos commodius agimus. Et quidem, inquit, vehementer errat; Duo Reges: constructio interrete.
+            <field name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Omnes enim iucundum motum, quo sensus hilaretur. At certe gravius. Primum quid tu dicis breve? Hic ambiguo ludimur. Sed videbimus. Nos commodius agimus. Et quidem, inquit, vehementer errat; Duo Reges: constructio interrete.
             </field>
             <field name='state'>review</field>
         </record>
 
         <record id="article7" model="blog.article">
             <field name="title">Non minor, inquit, voluptas percipitur ex vilissimis rebus quam ex pretiosissimis.</field>
-            <field name="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quot homines, tot sententiae; Quid censes in Latino fore? Falli igitur possumus. Graccho, eius fere, aequalí?
+            <field name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quot homines, tot sententiae; Quid censes in Latino fore? Falli igitur possumus. Graccho, eius fere, aequalí?
 
                 Urgent tamen et nihil remittunt. Verum hoc idem saepe faciamus. Recte dicis; Equidem e Cn. Quare conare, quaeso.
             </field>
@@ -82,8 +74,7 @@
 
         <record id="article8" model="blog.article">
             <field name="title">Haec quo modo conveniant, non sane intellego.</field>
-            <field name="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sint modo partes vitae beatae. Quare ad ea primum, si videtur; Magna laus. Sit sane ista voluptas. Facete M.
+            <field name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sint modo partes vitae beatae. Quare ad ea primum, si videtur; Magna laus. Sit sane ista voluptas. Facete M.
 
                 Si id dicis, vicimus. Ita credo.
 
@@ -96,8 +87,7 @@
 
         <record id="article9" model="blog.article">
             <field name="title">Nec vero alia sunt quaerenda contra Carneadeam illam sententiam.</field>
-            <field name="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illi enim inter se dissentiunt. Quibusnam praeteritis? Erat enim Polemonis.
+            <field name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illi enim inter se dissentiunt. Quibusnam praeteritis? Erat enim Polemonis.
 
                 Bonum incolumis acies: misera caecitas. Id enim natura desiderat. Primum quid tu dicis breve? Pollicetur certe.
 
@@ -110,8 +100,7 @@
 
         <record id="article10" model="blog.article">
             <field name="title">Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit?</field>
-            <field name="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velut ego nunc moveor. Ut pulsi recurrant? Quis istud, quaeso, nesciebat? Primum Theophrasti, Strato, physicum se voluit;
+            <field name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velut ego nunc moveor. Ut pulsi recurrant? Quis istud, quaeso, nesciebat? Primum Theophrasti, Strato, physicum se voluit;
 
                 Duo Reges: constructio interrete. Eaedem res maneant alio modo. Maximus dolor, inquit, brevis est. At hoc in eo M. An hoc usque quaque, aliter in vita? Quid ad utilitatem tantae pecuniae?
 
