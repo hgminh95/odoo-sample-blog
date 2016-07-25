@@ -16,4 +16,5 @@ class ReadList(models.Model):
 
     @api.depends('article_ids')
     def _compute_length(self):
-        self.length = len(self.article_ids)
+        for r in self:
+            r.length = len(r.article_ids)
