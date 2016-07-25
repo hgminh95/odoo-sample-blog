@@ -16,9 +16,3 @@ class Blog(http.Controller):
         return http.request.render('blog.article_show', {
             'article': article
         })
-
-#     @http.route('/blog/blog/objects/<model("blog.blog"):obj>/', auth='public')
-#     def object(self, obj, **kw):
-#         return http.request.render('blog.object', {
-#             'object': obj
-#         })

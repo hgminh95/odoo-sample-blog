@@ -40,12 +40,14 @@
         <record model="workflow.transition" id="article_review_to_draft">
             <field name="act_from" ref="wkf_article_review"/>
             <field name="act_to" ref="wkf_article_draft"/>
+            <field name="group_id" ref="blog.moderator"/>
             <field name="signal">draft</field>
         </record>
 
         <record model="workflow.transition" id="article_review_to_done">
             <field name="act_from" ref="wkf_article_review"/>
             <field name="act_to" ref="wkf_article_done"/>
+            <field name="group_id" ref="blog.moderator"/>
             <field name="signal">done</field>
         </record>
     </data>
