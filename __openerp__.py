@@ -10,12 +10,8 @@
         Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "hgminh95",
     'website': "http://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
-    # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
 
@@ -26,9 +22,12 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
+
         'views/article_views.xml',
         'views/article_templates.xml',
         'data/article_workflow.xml',
+
+        'views/readlist_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

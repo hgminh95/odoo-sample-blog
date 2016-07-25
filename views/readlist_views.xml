@@ -1,0 +1,49 @@
+<openerp>
+    <data>
+        <!-- Views -->
+        <record model="ir.ui.view" id="blog.readlist_view_list">
+            <field name="name">Readlist View</field>
+            <field name="model">blog.readlist</field>
+            <field name="priority" eval="10"/>
+            <field name="arch" type="xml">
+                <tree string="Readlist list">
+                    <field name="name"/>
+                    <field name="length"/>
+                    <field name="create_uid"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="blog.readlist_view_form">
+            <field name="name">Readlist Form View</field>
+            <field name="model">blog.readlist</field>
+            <field name="priority" eval="10"></field>
+            <field name="arch" type="xml">
+                <form string="Readlist form">
+                    <header>
+                    </header>
+
+                    <group colspan="2">
+                        <field name="name" nolabel="0"/>
+                    </group>
+
+                    <label for="article_ids"/>
+                    <field name="article_ids"/>
+                </form>
+            </field>
+        </record>
+
+        <!-- Actions -->
+        <record model="ir.actions.act_window" id="blog.readlist_action_window">
+            <field name="name">Readlist Action Window</field>
+            <field name="res_model">blog.readlist</field>
+            <field name="view_mode">tree,form,search</field>
+        </record>
+
+        <!-- Menu items -->
+        <menuitem name="Readlist" id="blog.menu_readlist" parent="blog.menu_root"/>
+
+        <menuitem name="Readlist" id="blog.menu_readlist_list" parent="blog.menu_readlist"
+                  action="blog.readlist_action_window"/>
+    </data>
+</openerp>
