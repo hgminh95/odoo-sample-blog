@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <tree string="Article list">
                     <field name="title"/>
-                    <field name="content"/>
+                    <field name="preview"/>
                     <field name="create_uid"/>
                     <field name="state"/>
                 </tree>

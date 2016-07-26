@@ -6,13 +6,23 @@ from openerp import models, fields, api
 class article(models.Model):
     _name = 'blog.article'
 
-    title = fields.Char(string="Title", required=True)
+    title = fields.Char(string="Title", rerquired=True)
     content = fields.Text(string="Content")
     state = fields.Selection(string="State", selection=[
         ("draft", "Draft"),
         ("review", "In Review"),
         ("done", "Done")
     ])
+    preview = fields.Char(
+        string="Preview",
+        compute="_compute_preview",
+        store=False
+    )
+
+    @api.depends('content')
+    def _compute_preview(self):
+        for r in self:
+            r.preview = r.content[:50] + "..."
 
     @api.multi
     def action_draft(self):
