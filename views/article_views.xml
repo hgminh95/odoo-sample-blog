@@ -67,14 +67,60 @@
             </field>
         </record>
 
+        <record model="ir.ui.view" id="blog.article_view_kanban">
+            <field name="name">Article Kanban View</field>
+            <field name="model">blog.article</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="create_uid">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click_edit
+                                               oe_sematic_html_override
+                                               oe_kanban_card
+                                               {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
+                                <div class="oe_dropdown_kanban">
+                                    <div class="oe_dropdown_toggle">
+                                        <i class="fa fa-bars fa-lg"/>
+                                        <ul class="oe_dropdown_menu">
+                                            <li>
+                                                <a type="delete">Delete</a>
+                                            </li>
+                                            <li>
+                                                <a type="edit">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a type="open">Open</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="oe_clear"/>
+                                </div>
+                            </div>
+
+                            <div t-attf-class="oe_kanban_content">
+                                <strong>Title:</strong>
+                                <field name="title"/>
+                                <br/>
+
+                                <strong>Preview:</strong>
+                                <field name="preview"/>
+                                <br/>
+                            </div>
+
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
         <!-- Actions -->
         <record model="ir.actions.act_window" id="blog.article_action_window">
             <field name="name">Article Action Window</field>
             <field name="res_model">blog.article</field>
-            <field name="view_mode">tree,form,search</field>
+            <field name="view_mode">tree,form,search,kanban</field>
         </record>
 
-        <!-- Menu items -->
+        <!-- cMenu items -->
         <menuitem name="Blog" id="blog.menu_root"/>
 
         <menuitem name="Article" id="blog.menu_article" parent="blog.menu_root"/>
