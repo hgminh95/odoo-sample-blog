@@ -3,10 +3,10 @@
 from openerp import models, fields, api
 
 
-class article(models.Model):
+class Article(models.Model):
     _name = 'blog.article'
 
-    title = fields.Char(string="Title", rerquired=True)
+    title = fields.Char(string="Title", required=True)
     content = fields.Text(string="Content")
     state = fields.Selection(string="State", selection=[
         ("draft", "Draft"),
