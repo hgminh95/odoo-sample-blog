@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_blog_article_all,blog.article,model_blog_article,,1,0,1,0
 access_blog_article_moderator,blog.article,model_blog_article,moderator,1,1,1,0
+access_blog_readlist_all,blog.readlist,model_blog_readlist,,1,0,0,0
