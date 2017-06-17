@@ -1,4 +1,4 @@
-<openerp>
+<odoo>
     <data>
         <record id="article0" model="blog.article">
             <field name="title">What is Lorem Ipsum?</field>
@@ -111,4 +111,4 @@
             <field name='state'>draft</field>
         </record>
     </data>
-</openerp>
+</odoo>

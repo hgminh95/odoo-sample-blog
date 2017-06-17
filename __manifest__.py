@@ -23,7 +23,6 @@
 
         'views/article_views.xml',
         'views/article_templates.xml',
-        'data/article_workflow.xml',
 
         'views/readlist_views.xml',
 

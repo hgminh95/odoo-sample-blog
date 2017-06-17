@@ -1,4 +1,4 @@
-<openerp>
+<odoo>
     <data>
         <!-- Views -->
         <record model="ir.ui.view" id="blog.readlist_view_list">
@@ -46,4 +46,4 @@
         <menuitem name="Readlist" id="blog.menu_readlist_list" parent="blog.menu_readlist"
                   action="blog.readlist_action_window"/>
     </data>
-</openerp>
+</odoo>
